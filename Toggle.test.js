@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import ToggleComponent from './Toggle';
+import ToggleComponent from './src/Toggle';
 
 Enzyme.configure({ adapter: new Adapter() });
 describe('ToggleComponent', () => {
