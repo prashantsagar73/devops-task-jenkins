@@ -1,7 +1,7 @@
 import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import ToggleComponent from './src/Toggle';
+import ToggleComponent from './Toggle';
 
 Enzyme.configure({ adapter: new Adapter() });
 describe('ToggleComponent', () => {
@@ -21,6 +21,8 @@ describe('ToggleComponent', () => {
     * simulate,
     * thought this simulate function we can simulate the DOM events
     */
+       // "test": "react-scripts test",
+
     toggleButton.simulate('click');
     const element=toggleInstance.find('div div');
     /*it means after the click the text doesn't exist, and its true*/
