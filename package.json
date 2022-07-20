@@ -36,6 +36,8 @@
     ]
   },
   "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "jest-watch-typeahead": "^0.6.5",
     "react-test-render": "^1.1.2"
   }

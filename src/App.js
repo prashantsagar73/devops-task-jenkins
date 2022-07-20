@@ -1,13 +1,9 @@
 import './App.css';
+import ToggleComponent from './Toggle';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-      <h1>Hello Prashant </h1>
-      </header>
-    </div>
+   < ToggleComponent />
   );
 }
 
