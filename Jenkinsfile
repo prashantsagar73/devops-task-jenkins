@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat '/src/Toggle.test.js'
+                bat 'src/npm run test'
             }
         }
         
