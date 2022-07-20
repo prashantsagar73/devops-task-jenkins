@@ -15,13 +15,6 @@ describe('ToggleComponent', () => {
     const toggleInstance = shallow(<ToggleComponent />);
     /** Find the button element from toggleInstance ***/
     const toggleButton= toggleInstance.find('button');
-   /** Now problem is how we can find the button clicked without   
-    *  anything,
-    * here enzyme will help us a lot again. It has a function called
-    * simulate,
-    * thought this simulate function we can simulate the DOM events
-    */
-       // "test": "react-scripts test",
 
     toggleButton.simulate('click');
     const element=toggleInstance.find('div div');
