@@ -6,7 +6,7 @@ pipeline {
     }
     stages {
         
-        stage('Build') {
+        stage('pre-req') {
             steps {
                 bat 'npm install'
             }
@@ -20,6 +20,11 @@ pipeline {
             steps {
                 bat 'npm run test'
             }
+        }
+        stage('Build'){
+        steps{
+            bat 'npm build'
+        }
         }
         
         }
